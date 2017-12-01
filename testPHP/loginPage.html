@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function checklogin(){
+ 
+	if((login.username.value!="")&&(login.password.value!=""))
+ {
+	 
+  return true;
+ }
+ else
+ {
+  alert ("cant be emtpty");
+  return false;
+ }
+}
+</script>
+</head>
+<body>
+<div align="center">
+<form name="login" action="checklogin.php" method="post" onSubmit="return checklogin()">
+<label>UserName</label><input type="text"  name="username"  size="20" /><br>	
+<label>PassWord</label><input type="password"  name="password"  size="20" /><br>
+<input type="submit"  name="submit"  value="login" />
+</form>
+<a href="addUser.html">create a new account</a>
+</div>
+</body>
+
+</html>
